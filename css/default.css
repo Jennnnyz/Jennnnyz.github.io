@@ -10,16 +10,21 @@
 .banner .button{
         color: white;
         background-color: rgba(0,0,0,0);
-        border-color: rgba(255,255,255,1);
+        border-color: white;
 }
 
-#moreAboutMe{
+.banner .button:hover{
+    color: #98bad6;
+    background-color: white;
+}
+
+#TMI{
     max-width: 800px;
     height: auto;
     width: auto\9; /* ie8 */
 }
 
-#mainBody{
+.blockContent{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -35,4 +40,8 @@
 .footer a{
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.footer{
+    background-color: white;
 }

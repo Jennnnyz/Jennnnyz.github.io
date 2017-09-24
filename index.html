@@ -18,6 +18,9 @@
         <!-- Bulma -->
         <link rel="stylesheet" href="css/bulma.css" type="text/css">
         <link rel="stylesheet" href="css/default.css" type="text/css">
+        
+        <!-- ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
             
         <!-- Font -->
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,10 +28,10 @@
         <section class="hero is-success is-fullheight">
           <div class="hero-body banner">
             <div class="container has-text-centered">
-              <h1 class="title">
+              <h1 class="title reveal is-1">
                 Jenny Zhang
               </h1>
-              <h2 class="subtitle is-5">
+              <h2 class="subtitle is-5 reveal">
                 I code stuff and take naps.
               </h2>
               <a href="Resume.pdf" target="_blank" class="button is-outlined">Resume</a>
@@ -37,29 +40,68 @@
         </section>
     </head>
     <body>     
-        <div id = "mainBody" class="content has-text-centered">
+        <div class="content has-text-centered">
             <div class="columns is-mobile">
                 <div class="column is-8 is-offset-2">
-                  <h3>About Me</h3>
-                  <p>Hello, I am a computer engineering student studying at University of British Columbia.
+                  <div class="blockContent reveal">
+                  <h1>About Me</h1>
+                  <p>Hello, I am a 4th year computer engineering student studying at University of British Columbia. I enjoy coding because I learn something new every day.
                   </p>
                     <div class="columns">
                         <div class="column is-10 is-offset-1">
-                          <figure id="profilePic" class="image">
+                          <figure id="profilePic" class="image reveal">
                             <img src="img/profilepic.jpg">
                           </figure>
                         </div>
                     </div>
-                  <h3>More About Me</h3>
-                  <figure id="moreAboutMe" class="image">
-                    <img src="img/moreaboutme.png">
+                  </div>
+                  <div class="blockContent reveal">
+                  <h1>More About Me</h1>
+                      <div class="blockContent reveal">
+                        <h4>Experience</h4>
+                        <dl>
+                            <dt>Database</dt>
+                            <dt>Graphic Design</dt>
+                            <dt>Machine Learning</dt>
+                            <dt>Mobile Development(iOS and Android)</dt>
+                            <dt>Web Development</dt>
+                        </dl>
+                      </div>
+                      <div class="blockContent reveal">
+                        <h4>Volunteer</h4>
+                        <h5>UBC Taiwan Association</h5>
+                        <small><i>2014 - 2016</i></small>
+                        <p>I had been a part of this social club for three years. My main tasks were event organization, event promotion, content creation, and graphic design. On my last year, I was the marketing vice president and led a team of 12 people.</p>
+                      </div>
+                      <div class="blockContent reveal">
+                        <h4>Competition/Challenge</h4>
+                        <dl>
+                            <dt>UBC BizTech X Deloitte: ThinkTECH 2016</dt>
+                            <dt>Microsoft College Coding Competition 2017</dt>
+                          </dl>
+                      </div>
+                      <div class="blockContent reveal">
+                        <h4>Hobbies</h4>
+                          <dl>
+                              <dt>Photography</dt>
+                              <dt>Karaoke</dt>
+                              <dt>Piano</dt>
+                              <dt>Skiing</dt>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="blockContent reveal">
+                  <h1>TMI</h1>
+                  <figure id="TMI" class="image">
+                    <img src="img/TMI.png">
                   </figure>
+                  </div>
                 </div>
             </div>
         </div>
         
     </body>
-    <footer class="footer">
+    <footer class="footer reveal">
     <div class="container has-text-centered">
         <div class="columns is-mobile">
             <div class="column is-half is-offset-one-quarter">
@@ -73,3 +115,6 @@
         </div>
     </footer>
 </html>
+
+<!-- javascript -->
+<script src="website.js"></script>
