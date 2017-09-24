@@ -1,18 +1,75 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="default: en-US">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home Page</title>
-        <meta name="home" content="Welcome Page">
-        <link rel="stylesheet" href="main.css">
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106772965-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-106772965-1');
+        </script>
+        
+        <title>Jenny Zhang</title>      
+        <meta charset="UTF-8">
+        <meta name="author" content="Jenny Zhang">
+        <meta name="description" content="Portfolio Website">
+        <!-- Bulma -->
+        <link rel="stylesheet" href="css/bulma.css" type="text/css">
+        <link rel="stylesheet" href="css/default.css" type="text/css">
+            
+        <!-- Font -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
+        <section class="hero is-success is-fullheight">
+          <div class="hero-body banner">
+            <div class="container has-text-centered">
+              <h1 class="title">
+                Jenny Zhang
+              </h1>
+              <h2 class="subtitle is-5">
+                I code stuff and take naps.
+              </h2>
+              <a href="Resume.pdf" target="_blank" class="button is-outlined">Resume</a>
+            </div>
+          </div>
+        </section>
     </head>
-    <body>
-        <div id = "welcomeText" width = 50>
-            <h1>Hello, this website is currently on summer vacation.</h1>
-            <h1>Instagram: jennyz1105</h1>
-            <h1>Email: jennyz1105@gmail.com</h1>
+    <body>     
+        <div id = "mainBody" class="content has-text-centered">
+            <div class="columns is-mobile">
+                <div class="column is-8 is-offset-2">
+                  <h3>About Me</h3>
+                  <p>Hello, I am a computer engineering student studying at University of British Columbia.
+                  </p>
+                    <div class="columns">
+                        <div class="column is-10 is-offset-1">
+                          <figure id="profilePic" class="image">
+                            <img src="img/profilepic.jpg">
+                          </figure>
+                        </div>
+                    </div>
+                  <h3>More About Me</h3>
+                  <figure id="moreAboutMe" class="image">
+                    <img src="img/moreaboutme.png">
+                  </figure>
+                </div>
+            </div>
         </div>
+        
     </body>
+    <footer class="footer">
+    <div class="container has-text-centered">
+        <div class="columns is-mobile">
+            <div class="column is-half is-offset-one-quarter">
+                <a href="https://www.instagram.com/jennyz1105/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                <a href = "mailto: jennyz1105@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+                <a href="https://github.com/jennnnyz/" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            </div>
+        </div>
+        <div id="copyright" class="hero-foot">
+        <p>© Jenny Zhang 2017</p></div>
+        </div>
+    </footer>
 </html>
